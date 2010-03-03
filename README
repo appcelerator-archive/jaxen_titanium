@@ -1,0 +1,6 @@
+This fork of Jaxen is to work around a bug in Android/Harmony's Node.getNextSibling() implementation. The bug in question is posted here:
+
+http://code.google.com/p/android/issues/detail?id=1863
+
+The official Jaxen page lives here:
+http://jaxen.codehaus.org/

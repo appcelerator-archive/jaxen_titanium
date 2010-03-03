@@ -156,7 +156,12 @@ public class DocumentNavigator extends DefaultNavigator
                 }
                 protected Node getNextNode (Node node)
                 {
-                    return node.getNextSibling();
+                    try {
+                        return node.getNextSibling();
+                    }
+                    catch (IndexOutOfBoundsException ex) {
+                        return null;
+                    }
                 }
             };
     }
